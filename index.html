@@ -5,43 +5,170 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flávia Duarte - Psicóloga</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="shortcut icon" href="assets/img/favicon.ico" />
     <script src="https://unpkg.com/feather-icons"></script>
+
+    <style>
+        @font-face{
+          font-family: Idealist Regular;
+          src: url("Idealist.otf");
+        }
+        @font-face{
+          font-family: Inter Regular;
+          src: url("Inter-Regular.ttf");
+        }
+        @font-face{
+          font-family: Inter Bold;
+          src: url("Inter-Bold.ttf");
+        }
+        .nude{
+            background-color: #e2d7d3;
+        }
+        .btn-nude{
+            --bs-btn-color: #fff;
+            --bs-btn-bg: #cab19d;
+            --bs-btn-border-color: #cab19d;
+            --bs-btn-hover-color: #fff;
+            --bs-btn-hover-bg: #b59f8d;
+            --bs-btn-hover-border-color: #cab19d;
+            --bs-btn-focus-shadow-rgb: 49, 132, 253;
+            --bs-btn-active-color: #fff;
+            --bs-btn-active-bg: #b59f8d;
+            --bs-btn-active-border-color: #b59f8d;
+            --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+            --bs-btn-disabled-color: #fff;
+            --bs-btn-disabled-bg: #cab19d;
+            --bs-btn-disabled-border-color: #cab19d;
+            color: #fefeff;
+        }
+        .botao{
+           border-radius: 0% !important;
+        }
+        .container-fluid-video{
+            --bs-gutter-y: 0;
+            width: 100%;
+            padding-right: calc(var(--bs-gutter-x) * 0.5);
+            padding-left: calc(var(--bs-gutter-x) * 0.5);
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .tamanho{
+          width: auto;
+          height: 100vh;
+        }
+        .col{
+          padding: 0;
+        }
+        .centralizar{
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+        .teste{
+          display: inline-block;
+        }
+        a{ 
+          text-decoration: none;
+          color: inherit;
+        } 
+        .titulo{
+          font-family: Idealist Regular;
+          color: #a7917c;
+          font-size: 3rem;
+        }
+        .texto-fonte{
+          font-family: Inter Regular;
+        }
+        .texto-cor{
+          color: #61524d;
+        }
+        span{
+          font-family: Inter Bold;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <img src="assets/img/logo.png" alt="Logo Flávia Duarte">
-        <div>
-            <h3>Flávia Duarte</h3>
-            <p>Psicóloga</p>
-        </div>
-        <div>
-            <a href="#">SOBRE MIM</a>
-            <a href="#">SERVIÇOS</a>
-            <a href="#">FENÔABC</a>
-            <a href="#">CONTATO</a>
-            <a href="#"><i data-feather="instagram"></i></a>
-            <a href="#">AGENDE SUA CONSULTA</a>
-        </div>
-    </nav>
-
-    <section>
-        <img src="assets/videos/videoGif.gif" alt="Video">
+    <!-- Menu - Utilies/Flex + Components/Navbar + Components/Dropdowns  -->
+	<nav class="navbar navbar-expand-lg navbar-light nude">
+		<div class="container">
+		  <a class="navbar-brand" href="#">
+			  <img src="assets/img/logo.png" alt="Logo Flávia Duarte" height="25">
+		  </a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#carouselExampleIndicators">Flávia Duarte</a>
+            </li>
+            <li class="nav-item">
+              <p class="nav-link" href="#">psicóloga</p>
+            </li>
+          </ul>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="#carouselExampleIndicators">Flávia Duarte</a>
+			  </li>
+              <li class="nav-item">
+				<p class="nav-link" href="#">psicóloga</p>
+			  </li>
+			</ul>
+			<ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre mim</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Serviços</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">FenôABC</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"><i data-feather="instagram"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <button type="button" class="botao btn btn-nude">
+                        <a href="#">AGENDE SUA CONSULTA</a>
+                    </button>
+                  </li>
+			</ul>
+		  </div>
+		</div>
+	</nav>
+    <section >
+        <img class="container-fluid-video" src="assets/videos/videoGif.gif" alt="Video">
         <h1>Para Você. Por Você.</h1>
     </section>
 
+    <!-- foto flavia  -->
     <section>
-        <img src="assets/img/fotoFlavia.jpg" alt="Foto Flávia Duarte">
-        <div>
-            <h2>Olá, eu sou a Flávia!</h2>
-            <p>Sou andreense, vivo e trabalho na região do ABC paulista. Me formei Psicóloga em 2007 e desde então atuo na área clínica, cuidando de pessoas com as mais variadas questões e queixas, <span>a Perspectiva Fenomenológico-Existencial.</span> Quanto à minha formação acadêmica, <span>sou Mestra e Doutora em Psicologia pela USP</span> e <span>Especialista em Psicologia Hospitalar pelo IAMSPE-SP.</span> Além do consutltório, também trabalho como professora universitária de práticas clínicas em Psicologia, ensino de Fenomenologias e Supervisora de estágios.</p>
-            <a href="#">AGENDE SUA CONSULTA</a>
+      <div class="row nude">
+        <div class="col-6">
+          <img src="assets/img/fotoFlavia.jpg" class="d-block w-100" alt="Foto Flávia Duarte">
         </div>
+        <div class="col-6 p-5 centralizar text-center">
+          <h2 class="titulo">Olá, eu sou a Flávia!</h2>
+          <p class="texto-fonte texto-cor">Sou andreense, vivo e trabalho na região do ABC paulista. Me formei Psicóloga em 2007 e desde então atuo na área clínica, cuidando de pessoas com as mais variadas questões e queixas, <span>sob a Perspectiva Fenomenológico-Existencial.</span> Quanto à minha formação acadêmica, <span>sou Mestra e Doutora em Psicologia pela USP</span> e <span>Especialista em Psicologia Hospitalar pelo IAMSPE-SP.</span> Além do consutltório, também trabalho como professora universitária de práticas clínicas em Psicologia, ensino de Fenomenologias e Supervisora de estágios.</p>
+          <button class="botao btn btn-nude">
+            <a class="texto-fonte" href="#">AGENDE SUA CONSULTA</a>
+          </button>
+        </div>
+      </div>
     </section>
 
     <section>
+      <div>
         <img src="assets/img/LogoBranco.png" alt="Logo mãos dadas">
-        <div>
+        <div class="container">
             <h2>Psicoterapia</h2>
             <p>presencial/remota</p>
             <h6>Ofereço tratamento especializado e suporte para pessoas que estejam passando por:</h6>
@@ -70,6 +197,7 @@
             <h2>Avaliação Psicológica</h2>
             <a href="#">AGENDE SUA CONSULTA</a>
         </div>
+      </div>
     </section>    
     
     <section>
