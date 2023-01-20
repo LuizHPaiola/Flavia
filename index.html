@@ -28,6 +28,14 @@
         .nude{
             background-color: #e2d7d3;
         }
+        .descricaoFlavia{
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+        }
+        .col-6{
+          width: 50%;
+        }
         .btn-nude{
             --bs-btn-color: #fff;
             --bs-btn-bg: #cab19d;
@@ -90,6 +98,70 @@
         span{
           font-family: Inter Bold;
         }
+        .video{
+          display: inline-block;
+          position: relative;
+          width: 100%;
+        }
+        .video h1{
+          position: absolute;
+          display: flex;
+          color: #fefeff;
+          top: 50%;
+          width: 100%;
+          justify-content: center;
+          font-size: 72px;
+        }
+        .curriculo{
+          background-color: #cab19d;
+        }
+        .fenoAbc{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: justify;
+        }
+        .textoFeno{
+          display: flex;
+          flex-direction: column;
+          width: 40%;
+          margin: 50px 0 50px 0;
+          align-items: center;
+          text-align: center;
+          text-indent: 25px;
+        }
+        .fotosFeno{
+          width: 100%;
+        }
+        .contato{
+          display: flex;
+          flex-direction: row;
+          margin: 80px 0 80px 0;
+          justify-content: space-evenly;
+          width: 80%;
+          margin-left: calc(20% / 2);
+        }
+        .box{
+          width: 30%;
+          text-align: center;
+        }
+        .box2 a{
+          text-decoration:underline;
+        }
+        .carrossel{
+          display: flex;
+          flex-direction: row;
+          width: 95%;
+          justify-content: space-evenly;
+          margin-left: calc(5% / 2);
+        }
+        .imagemCarrossel{
+          width: 18%;
+        }
+
+        footer{
+          margin: 20px 0 0 calc(5% / 2);
+        }
     </style>
 </head>
 <body>
@@ -144,16 +216,18 @@
 		  </div>
 		</div>
 	</nav>
-    <section >
-        <img class="container-fluid-video" src="assets/videos/videoGif.gif" alt="Video">
-        <h1>Para Você. Por Você.</h1>
+    <section class="video">
+          <img class="container-fluid-video" src="assets/videos/videoGif.gif" alt="Video">
+        <!-- <div class="texto-video"> -->
+          <h1>Para Você. Por Você.</h1>
+        <!-- </div> -->
     </section>
 
     <!-- foto flavia  -->
-    <section>
-      <div class="row nude">
+    <section >
+      <div class="row nude descricaoFlavia">
         <div class="col-6">
-          <img src="assets/img/fotoFlavia.jpg" class="d-block w-100" alt="Foto Flávia Duarte">
+          <img src="assets/img/fotoFlavia.jpg" class="d-block w-100" alt="Foto Flávia Duarte" class="Fotoflavia">
         </div>
         <div class="col-6 p-5 centralizar text-center">
           <h2 class="titulo">Olá, eu sou a Flávia!</h2>
@@ -166,7 +240,7 @@
     </section>
 
     <section>
-      <div>
+      <div class="curriculo">
         <img src="assets/img/LogoBranco.png" alt="Logo mãos dadas">
         <div class="container">
             <h2>Psicoterapia</h2>
@@ -200,36 +274,41 @@
       </div>
     </section>    
     
-    <section>
-        <img src="assets/img/PrimeiraFoto.png" alt="">
-        <h2>FenôABC</h2>
-        <p>Voltado para estudantes de psicologia e psicólogas(os), o FenôABC é um núcleo de estudos que, como o próprio nome sugere, é voltado ao ensino de práticas clínicas e fenomenologias.<span>A missão do núcleo é o conhecimento e a reflexão crítica da práxis psicológica em seus diversos campos do saber, sob o prisma da Fenomenologia-Existencial.</span> 
-        Se você se interessou por participar das atividades do núcleo FenôABC, conheça o site <a href="#">(www.fenoabc.com.br)</a> e siga as redes sociais para maiores informações: <a href="#">@fenoabc</a></p>
-        <img src="assets/img/SegundaFoto.png" alt="">
+    <section class="fenoAbc">
+        <img src="assets/img/PrimeiraFoto.png" alt="" class="fotosFeno">
+        <div class="textoFeno">
+          <h2>FenôABC</h2>
+          <p>Voltado para estudantes de psicologia e psicólogas(os), o FenôABC é um núcleo de estudos que, como o próprio nome sugere, é voltado ao ensino de práticas clínicas e fenomenologias.<span>A missão do núcleo é o conhecimento e a reflexão crítica da práxis psicológica em seus diversos campos do saber, sob o prisma da Fenomenologia-Existencial.</span></p> 
+            <p>Se você se interessou por participar das atividades do núcleo FenôABC, conheça o site <a href="#">(www.fenoabc.com.br)</a> e siga as redes sociais para maiores informações: <a href="#">@fenoabc</a></p>
+        </div>
+
+        <img src="assets/img/SegundaFoto.png" alt="" class="fotosFeno">
     </section>
 
-    <section>
-        <div>
+    <section class="contato">
+        <div class="box">
             <h5>E-mail:</h5>
             <p>flaviaduarte.psi@gmail.com</p>
             <h5>whatsapp:</h5>
-            <p>+55 11 98947 4243</p>
-            <a href="#">AGENDE SUA CONSULTA</a>
+            <p>+55 11 98947-  4243</p>
+            <button type="button" class="botao btn btn-nude">
+              <a href="#">AGENDE SUA CONSULTA</a>
+          </button>
         </div>
         
-        <div>
+        <div class="box box2">
             <h5>Endereço:</h5>
             <p>Jardim Park Business Av. Industrial, 780 - 8° andar, sala 808 Jardim, Santo André - SP, 09080-500</p>
-            <a href="#">VEJA NO MAPA:</a>
+            <a href="https://goo.gl/maps/55BtpWVg31pxKbmr5" target="_blank">VEJA NO MAPA</a>
         </div>
     </section>
 
-    <section>
-        <img src="assets/img/Foto1Carrossel.png" alt="">
-        <img src="assets/img/Foto2Carrossel.png" alt="">
-        <img src="assets/img/Foto3Carrossel.png" alt="">
-        <img src="assets/img/Foto4Carrossel.png" alt="">
-        <img src="assets/img/Foto5Carrossel.png" alt="">
+    <section class="carrossel">
+        <img src="assets/img/Foto1Carrossel.png" alt="" class="imagemCarrossel">
+        <img src="assets/img/Foto2Carrossel.png" alt="" class="imagemCarrossel">
+        <img src="assets/img/Foto3Carrossel.png" alt="" class="imagemCarrossel">
+        <img src="assets/img/Foto4Carrossel.png" alt="" class="imagemCarrossel">
+        <img src="assets/img/Foto5Carrossel.png" alt="" class="imagemCarrossel">
     </section>
     
     <footer>
