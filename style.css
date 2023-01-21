@@ -1,0 +1,219 @@
+@font-face{
+    font-family: Idealist Regular;
+    src: url("Idealist.otf");
+  }
+  @font-face{
+    font-family: Inter Regular;
+    src: url("Inter-Regular.ttf");
+  }
+  @font-face{
+    font-family: Inter Bold;
+    src: url("Inter-Bold.ttf");
+  }
+  .nude{
+      background-color: #e2d7d3;
+  }
+  .descricaoFlavia{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .col-6{
+    width: 50%;
+  }
+  .btn-nude{
+      --bs-btn-color: #fff;
+      --bs-btn-bg: #cab19d;
+      --bs-btn-border-color: #cab19d;
+      --bs-btn-hover-color: #fff;
+      --bs-btn-hover-bg: #b59f8d;
+      --bs-btn-hover-border-color: #cab19d;
+      --bs-btn-focus-shadow-rgb: 49, 132, 253;
+      --bs-btn-active-color: #fff;
+      --bs-btn-active-bg: #b59f8d;
+      --bs-btn-active-border-color: #b59f8d;
+      --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+      --bs-btn-disabled-color: #fff;
+      --bs-btn-disabled-bg: #cab19d;
+      --bs-btn-disabled-border-color: #cab19d;
+      color: #fefeff;
+  }
+  .botao{
+     border-radius: 0% !important;
+  }
+  .container-fluid-video{
+      --bs-gutter-y: 0;
+      width: 100%;
+      padding-right: calc(var(--bs-gutter-x) * 0.5);
+      padding-left: calc(var(--bs-gutter-x) * 0.5);
+      margin-right: auto;
+      margin-left: auto;
+  }
+  .tamanho{
+    width: auto;
+    height: 100vh;
+  }
+  .col{
+    padding: 0;
+  }
+  .centralizar{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .teste{
+    display: inline-block;
+  }
+  a{ 
+    text-decoration: none;
+    color: inherit;
+  } 
+  .titulo{
+    font-family: Idealist Regular;
+    color: #a7917c;
+    font-size: 3rem;
+  }
+  .texto-fonte{
+    font-family: Inter Regular;
+  }
+  .texto-cor{
+    color: #61524d;
+  }
+  span{
+    font-family: Inter Bold;
+  }
+  .video{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+  }
+  .video h1{
+    position: absolute;
+    display: flex;
+    color: #fefeff;
+    top: 50%;
+    width: 100%;
+    justify-content: center;
+    font-size: 72px;
+  }
+  .curriculo{
+    background-color: #c9bfb5;
+  }
+  .fenoAbc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+  }
+  .textoFeno{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 50px 0 50px 0;
+    align-items: center;
+    text-align: center;
+    text-indent: 25px;
+  }
+  .fotosFeno{
+    width: 100%;
+  }
+  .contato{
+    display: flex;
+    flex-direction: row;
+    margin: 80px 0 80px 0;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-left: calc(20% / 2);
+  }
+  .box{
+    width: 30%;
+    text-align: center;
+  }
+  .box2 a{
+    text-decoration:underline;
+  }
+  .carrossel{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    justify-content: space-evenly;
+    margin-left: calc(5% / 2);
+  }
+  .imagemCarrossel{
+    width: 18%;
+  }
+
+  footer{
+    margin: 20px 0 0 calc(5% / 2);
+  }
+
+  .curriculo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+  }
+
+  .curriculo img{
+   margin: 2em;
+  }
+
+  .container-curriculo{
+    background-color: #fff;
+    padding: 4em 10em 5em;
+    margin-bottom: 8em;
+
+  }
+
+  .container-curriculo h2{
+    color: #a7917c;
+    font-size: 3em;
+    font-family: Idealist Regular;
+
+   
+  }
+
+  .container-curriculo p{
+    color: #7d726e;
+    line-height: 0.7;
+    font-family: Inter Regular;
+    font-weight: 500;
+   
+}
+    .curriculo-p p{
+        margin-left: 1.5em;
+    }
+    .curriculo-p{
+        border-left:solid;
+        border-color: #e2d7d3;
+        border-width: 0.01em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    
+    }
+  .container-curriculo h6{
+    color:#a7917c;
+    font-weight: 400;
+  }
+
+  .curriculo-cabecalho{
+    line-height: 0;
+    
+    flex-wrap: wrap;
+
+    margin-bottom: 2em;
+  }
+
+  .curriculo-cabecalho p{
+    font-size: 0.9em;
+    color: #a7917c;
+  }
+
+  .curriculo-h2{
+    margin-top: 1em;
+  }
+
+  .btn-curriculo{
+    margin:1em;
+  }
