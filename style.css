@@ -20,6 +20,7 @@
   .col-6{
     width: 50%;
   }
+
   .btn-nude{
       --bs-btn-color: #fff;
       --bs-btn-bg: #cab19d;
@@ -216,3 +217,67 @@
   .btn-curriculo{
     margin:1em;
   }
+
+
+  .flavia-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .flavia-nav h1{
+    font-size: 2em;
+    font-family: Idealist Regular;
+    color: #a7917c;
+  }
+
+  .flavia-nav h2{
+    font-size: 1.5em;
+    font-family: Idealist Regular;
+    
+  }
+  
+  .logo-insta{
+    width: 1.5em;
+  }
+
+ .navbar{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-around;
+  align-content: center;
+ }
+ .container-nav{
+  background-color:#e2d7d3;
+  display: flex;
+  align-items: center;
+ }
+ 
+ .links-menu{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  
+}
+.links-menu li{
+  margin-left: 1em;
+  padding: 0;
+
+}
+
+.links-menu li a{
+  font-family: Inter Regular;
+  
+}
+
+.logo-nav{
+  width: 15%;
+}
+
+.botao-menu{
+  margin: 0;
+}
