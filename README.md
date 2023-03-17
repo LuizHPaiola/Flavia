@@ -6,14 +6,14 @@ O objetivo deste projeto é fornecer à Flavia Duarte uma presença online que p
 ## Tecnologias utilizadas
 O site foi desenvolvido utilizando as seguintes tecnologias:
 
-HTML
-CSS
-Bootstrap
+- HTML
+- CSS
+- Bootstrap
 
 # Funcionalidades
 O site possui as seguintes funcionalidades:
 
-Apresentação dos serviços oferecidos pela Flavia Duarte
-Apresentação da formação acadêmica e profissional da psicóloga
-Formulário de contato para agendamento de sessões
-Página de blog com artigos escritos pela Flavia Duarte
+- Apresentação dos serviços oferecidos pela Flavia Duarte
+- Apresentação da formação acadêmica e profissional da psicóloga
+- Formulário de contato para agendamento de sessões
+- Página de blog com artigos escritos pela Flavia Duarte
