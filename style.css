@@ -121,10 +121,11 @@
   .contato{
     display: flex;
     flex-direction: row;
-    margin: 80px 0 80px 0;
+    padding: 80px 0 80px 0;
     justify-content: space-evenly;
-    width: 80%;
-    margin-left: calc(20% / 2);
+    width: 100%;
+    /* padding-left: calc(20% / 2); */
+    background-color: #61524d;
   }
   .box{
     width: 30%;
@@ -230,10 +231,11 @@
     font-size: 2em;
     font-family: Idealist Regular;
     color: #a7917c;
+    padding: 0.2em;
   }
 
   .flavia-nav h2{
-    font-size: 1.5em;
+    font-size: 1em;
     font-family: Idealist Regular;
     
   }
@@ -280,4 +282,20 @@
 
 .botao-menu{
   margin: 0;
+}
+
+#sobre-mim{
+  width: 100%;
+  margin: 0;
+}
+
+.titulo-contato{
+  color: #a08a77;
+  text-transform: uppercase;
+  font-family: Inter Regular;
+}
+.texto-contato{
+  color: #b3a8a0;
+  text-transform: uppercase;
+  font-family: Inter Regular;
 }
