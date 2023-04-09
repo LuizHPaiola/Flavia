@@ -21,6 +21,10 @@
     width: 50%;
   }
 
+  .p-5{
+    padding: 3vw !important
+  }
+
   .btn-nude{
       --bs-btn-color: #fff;
       --bs-btn-bg: #cab19d;
@@ -40,6 +44,8 @@
   }
   .botao{
      border-radius: 0% !important;
+     font-size: 1vw !important;
+     padding: 0.75vw 0.375vw;
   }
   .container-fluid-video{
       --bs-gutter-y: 0;
@@ -72,10 +78,11 @@
   .titulo{
     font-family: Idealist Regular;
     color: #a7917c;
-    font-size: 3rem;
+    font-size: 5vw;
   }
   .texto-fonte{
     font-family: Inter Regular;
+    font-size: 1.2vw;
   }
   .texto-cor{
     color: #61524d;
@@ -95,7 +102,7 @@
     top: 50%;
     width: 100%;
     justify-content: center;
-    font-size: 72px;
+    font-size: 7vw;
   }
   .curriculo{
     background-color: #c9bfb5;
@@ -121,7 +128,7 @@
   .contato{
     display: flex;
     flex-direction: row;
-    padding: 80px 0 80px 0;
+    padding: 8vw 0 8vw 0;
     justify-content: space-evenly;
     width: 100%;
     /* padding-left: calc(20% / 2); */
@@ -146,30 +153,30 @@
   }
 
   footer{
-    margin: 20px 0 0 calc(5% / 2);
+    margin: 20vw 0 0 calc(5% / 2);
   }
 
   .curriculo{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2em;
+    padding: 2vw;
   }
 
   .curriculo img{
-   margin: 2em;
+   margin: 2vw;
   }
 
   .container-curriculo{
     background-color: #fff;
-    padding: 4em 10em 5em;
-    margin-bottom: 8em;
+    padding: 4vw 10vw 5vw;
+    margin-bottom: 8vw;
 
   }
 
   .container-curriculo h2{
     color: #a7917c;
-    font-size: 3em;
+    font-size: 3vw;
     font-family: Idealist Regular;
 
    
@@ -182,19 +189,22 @@
    
 }
     .curriculo-p p{
-        margin-left: 1.5em;
+        margin-left: 1.5vw;
+        font-size:1.3vw;
     }
     .curriculo-p{
         border-left:solid;
         border-color: #e2d7d3;
-        border-width: 0.01em;
-        margin-top: 1em;
-        margin-bottom: 1em;
+        border-width: 0.01vw;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+      
     
     }
   .container-curriculo h6{
     color:#a7917c;
     font-weight: 400;
+    font-size:1.5vw;
   }
 
   .curriculo-cabecalho{
@@ -202,23 +212,27 @@
     
     flex-wrap: wrap;
 
-    margin-bottom: 2em;
+    margin-bottom: 2vw;
   }
 
   .curriculo-cabecalho p{
-    font-size: 0.9em;
+    font-size: 0.9vw;
     color: #a7917c;
   }
 
   .curriculo-h2{
-    margin-top: 1em;
+    margin-top: 1vw;
   }
 
   .btn-curriculo{
-    margin:1em;
+    margin:1vw;
   }
 
-
+  .navbar-collapse{
+    flex-basis: 100%;
+    flex-grow: 0 !important;
+    align-items: center;  
+  }
   .flavia-nav{
     display: flex;
     flex-direction: row;
@@ -230,7 +244,7 @@
     font-size: 2em;
     font-family: Idealist Regular;
     color: #a7917c;
-    padding: 0.2em;
+    padding: 0.2vw;
   }
 
   .flavia-nav h2{
@@ -240,13 +254,13 @@
   }
   
   .logo-insta{
-    width: 1.5em;
+    width: 3vw;
   }
 
  .navbar{
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: space-around;
   align-content: center;
@@ -265,7 +279,7 @@
   
 }
 .links-menu li{
-  margin-left: 1em;
+  margin-left: 1vw;
   padding: 0;
 
 }
@@ -292,9 +306,19 @@
   color: #a08a77;
   text-transform: uppercase;
   font-family: Inter Regular;
+  font-size: 3vw;
 }
 .texto-contato{
   color: #b3a8a0;
   text-transform: uppercase;
   font-family: Inter Regular;
+  font-size: 2vw;
+}
+
+.a{
+  font-size: 1.5vw;
+}
+
+.p-footer{
+  font-size: 2vw;
 }
